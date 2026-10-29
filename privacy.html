@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Stand Publisher</title>
+  <meta name="description" content="How Stand Publisher accesses, uses, stores and shares Google user data.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav>
+    <a href="index.html">Stand Publisher</a>
+    <a href="#en">English</a>
+    <a href="#ru">Русский</a>
+  </nav>
+
+  <section id="en">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: October 29, 2026</p>
+
+    <p>This policy describes how Stand Publisher (the "app"), an internal desktop tool of F1NNland, accesses, uses, stores and shares Google user data. The app runs only on the computer of the person using it. We do not operate any server for it, and we do not receive any of your data.</p>
+
+    <h2>Data the app accesses</h2>
+    <p>When you sign in with Google, the app requests the Google Drive scope <code>https://www.googleapis.com/auth/drive</code>. It uses this access only inside the single Drive folder whose ID you enter in the app settings. Inside that folder it:</p>
+    <ul>
+      <li>lists the names, sizes and modification dates of files and folders;</li>
+      <li>reads and writes small JSON files that describe published versions;</li>
+      <li>creates folders and uploads zip archives of builds that you choose to publish;</li>
+      <li>deletes old build archives in that folder to stay within the storage limit.</li>
+    </ul>
+    <p>The app does not read your other Drive files, your Google profile, contacts, email or any other Google data.</p>
+
+    <h2>How the data is used</h2>
+    <p>The data is used only to perform the actions you start: publishing a build, promoting or rolling back a version, listing versions, and cleaning up old builds. The app has no analytics, telemetry, advertising or tracking.</p>
+
+    <h2>Storage</h2>
+    <p>The OAuth token issued by Google is stored on your computer in <code>%APPDATA%\StandPublisher\token</code>, encrypted with Windows Data Protection (DPAPI) for your Windows user account. The app's settings, such as the Drive folder ID and the path to the OAuth client file, are stored in <code>%APPDATA%\StandPublisher\config.json</code>. Builds you publish stay in your own Google Drive and remain under your control.</p>
+
+    <h2>Sharing</h2>
+    <p>The app sends data only to Google APIs over HTTPS. We do not sell, transfer or share Google user data with anyone, and no person other than you has access to it through the app.</p>
+    <p>Stand Publisher's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>Removing access and data</h2>
+    <ul>
+      <li>Revoke the app's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li>Delete the folder <code>%APPDATA%\StandPublisher</code> to remove the stored token and settings from your computer.</li>
+      <li>Files the app uploaded stay in your Google Drive. You can delete them there like any other file.</li>
+    </ul>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be published on this page with a new "Last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="https://github.com/F1NNland/stand-publisher/issues">open an issue in this repository</a>.</p>
+  </section>
+
+  <section id="ru" class="lang" lang="ru">
+    <h1>Политика конфиденциальности</h1>
+    <p class="meta">Обновлено: 29 октября 2026 г.</p>
+
+    <p>Эта политика описывает, как Stand Publisher («программа»), внутренняя утилита F1NNland, получает доступ к данным пользователя Google, использует, хранит и передаёт их. Программа работает только на компьютере того, кто её запускает. У нас нет сервера для неё, и ваши данные к нам не попадают.</p>
+
+    <h2>К каким данным есть доступ</h2>
+    <p>При входе через Google программа запрашивает доступ к Google Диску (<code>https://www.googleapis.com/auth/drive</code>). Она пользуется им только внутри одной папки Диска, ID которой вы указали в настройках. В этой папке программа:</p>
+    <ul>
+      <li>получает список файлов и папок с их именами, размерами и датами изменения;</li>
+      <li>читает и записывает небольшие JSON-файлы с описанием опубликованных версий;</li>
+      <li>создаёт папки и загружает zip-архивы билдов, которые вы решили выложить;</li>
+      <li>удаляет старые архивы билдов в этой папке, чтобы не превышать квоту.</li>
+    </ul>
+    <p>Другие файлы на Диске, профиль Google, контакты, почту и другие данные Google программа не читает.</p>
+
+    <h2>Как используются данные</h2>
+    <p>Данные используются только для действий, которые вы запускаете сами:</p>
+    <ul>
+      <li>выкладка билда;</li>
+      <li>перевод версии между каналами и откат;</li>
+      <li>просмотр списка версий;</li>
+      <li>удаление старых билдов.</li>
+    </ul>
+    <p>В программе нет аналитики, телеметрии, рекламы и отслеживания.</p>
+
+    <h2>Хранение</h2>
+    <p>Программа хранит на вашем компьютере только два файла:</p>
+    <ul>
+      <li>OAuth-токен от Google — в <code>%APPDATA%\StandPublisher\token</code>, зашифрованный средствами Windows (DPAPI) для вашей учётной записи Windows;</li>
+      <li>настройки (ID папки на Диске и путь к файлу OAuth-клиента) — в <code>%APPDATA%\StandPublisher\config.json</code>.</li>
+    </ul>
+    <p>Выложенные билды остаются на вашем Google Диске и под вашим контролем.</p>
+
+    <h2>Передача данных</h2>
+    <p>Программа отправляет данные только в API Google по HTTPS. Мы не продаём и никому не передаём данные пользователей Google. Через программу к ним нет доступа ни у кого, кроме вас.</p>
+    <p>Использование и передача информации, полученной из API Google, соответствуют <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, включая требования Limited Use.</p>
+
+    <h2>Как отозвать доступ и удалить данные</h2>
+    <ul>
+      <li>Отозвать доступ программы можно в любой момент на <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+      <li>Удалите папку <code>%APPDATA%\StandPublisher</code>, чтобы стереть токен и настройки с компьютера.</li>
+      <li>Загруженные программой файлы остаются на вашем Google Диске. Их можно удалить там, как любые другие файлы.</li>
+    </ul>
+
+    <h2>Изменения</h2>
+    <p>Если политика изменится, новая версия появится на этой странице с новой датой обновления.</p>
+
+    <h2>Контакты</h2>
+    <p>Вопросы по политике: <a href="https://github.com/F1NNland/stand-publisher/issues">создайте issue в этом репозитории</a>.</p>
+  </section>
+
+  <footer><a href="index.html">Stand Publisher</a> · Privacy Policy</footer>
+</main>
+</body>
+</html>
